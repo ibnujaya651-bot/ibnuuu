@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Analisis Kecocokan Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Analisis Kecocokan Kamu</h1>
+    <p class="subtitle">SELAMAT MENGISI </p>
+
+    <div id="mode-select" class="card">
+      <button id="btn-self">Isi untuk Diri Sendiri</button>
+      <button id="btn-invite">Invite untuk Link </button>
+    </div>
+
+    <div id="quiz-card" class="card hidden">
+      <div id="progress">Soal <span id="qnum">1</span> / <span id="qtotal">8</span></div>
+      <div id="question-area">
+        <h2 id="qtext"></h2>
+        <div id="options"></div>
+      </div>
+
+      <div class="controls">
+        <button id="btn-prev">⬅ Sebelumnya</button>
+        <button id="btn-next">Lanjut ➡</button>
+      </div>
+    </div>
+
+    <div id="result-card" class="card hidden">
+      <h2>Hasil & Rekomendasi</h2>
+      <div id="result-summary"></div>
+      <div id="result-suggestion"></div>
+
+      <div class="actions">
+        <button id="btn-save">Simpan Lokal</button>
+        <button id="btn-copy">Salin Hasil</button>
+        <button id="btn-new">Mulai Lagi</button>
+      </div>
+      <p class="note">Catatan privasi: data disimpan hanya di browser (localStorage).</p>
+    </div>
+
+    <div id="invite-card" class="card hidden">
+      <h3>Buat Link Invite</h3>
+      <p>(privasi terjaga).</p>
+      <button id="btn-generate">Generate Link Invite</button>
+      <div id="invite-url" class="invite-url"></div>
+      <small>A</small>
+    </div>
+
+    <footer>
+      <small>Made with care ibnu</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
